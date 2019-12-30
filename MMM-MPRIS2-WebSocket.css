@@ -1,0 +1,39 @@
+.MMM-MPRIS2-WebSocket ul {
+    list-style: none;
+    padding: 0.5em;
+    margin: 0;
+}
+
+.MMM-MPRIS2-WebSocket li span {
+    padding-right : 0.5em;
+}
+
+.MMM-MPRIS2-WebSocket .playing {
+    clear : both;
+    overflow: hidden;
+}
+
+.MMM-MPRIS2-WebSocket .paused span {
+    margin: 0.25em;
+}
+
+
+.MMM-MPRIS2-WebSocket .album-art, .MMM-MPRIS2-WebSocket .media-info {
+    float: left;
+}
+
+.MMM-MPRIS2-WebSocket .album-art {
+    width : 125px;
+    height : 125px;
+    border-radius: 125px;
+    border: 2px solid gray;
+}
+
+.MMM-MPRIS2-WebSocket .album-art span {
+    font-size: 125px;
+}
+
+.MMM-MPRIS2-WebSocket .media-info .fa {
+    width : 20px;
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+{% if not connected %}
+<div class="small dimmed">
+    Not connected
+</div>
+{% elif playing %}
+<div class="playing small">
+    {% if state.playing.art %}
+    <img class="album-art" src="data:{{state.playing.art.content-type}};base64,{{state.playing.art.data}}"/>
+    {% else %}
+    <div class="album-art dimmed">
+        <span class="fa fa-compact-disc"></span>
+    </div>
+    {% endif %}
+    <div class="media-info">
+        <ul>
+            <li><span class="fa fa-music"></span><span class="bright">{{state.playing.title}}</span></li>
+            <li><span class="fa fa-user dimmed"></span>{{state.playing.artist}}</li>
+            <li class="xsmall"><span class="fa fa-compact-disc dimmed"></span>{{state.playing.album}}</li>
+            <li class="xsmall"><span class="fa fa-clock dimmed"></span>{{formatTime(state.playing.time.length)}}</li>
+            <li class="xsmall"><span class="fa fa-play dimmed"></span>{{state.playing.player}}</li>
+        </ul>
+    </div>
+</div>
+{% else %}
+<div class="paused small">
+    <span class="fa fa-pause dimmed"></span><span>{{state.paused.player}}</span>
+</div>
+{% endif %}
