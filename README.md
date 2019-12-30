@@ -12,8 +12,8 @@
   position: "top_left",
   header: "Playing now",
   config: {
-      	host : <host of target machine>,
-		port : <port of target machine>
+    host : <host of target machine>,
+    port : <port of target machine>
   }
 },
 ```
